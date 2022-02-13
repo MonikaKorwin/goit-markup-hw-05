@@ -60,7 +60,7 @@
       <section class="hero">
         <div class="hero-items">
           <h1 class="main-tittle">EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU</h1>
-          <button class="button" type="button">Zamów usługę</button>
+          <button class="button" type="button" data-modal-open>Zamów usługę</button>
         </div>
       </section>
 
@@ -441,5 +441,16 @@
       </div>
       </section>
     </footer>
+
+<div class="backdrop is-hidden" data-modal>
+  <div class="modal">
+  
+        <svg class="close-btn">
+      <use href="./images/icons.swg.svg#icon-close-black-18dp-2-1" data-modal-close></use>
+    </svg>
+  
+  </div>
+</div>
+ <script src="./js/modal.js"></script>
   </body>
 </html>
