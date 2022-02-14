@@ -81,8 +81,28 @@ margin-right: 46px ;
   margin-left: 258px;
   height: 16px;
 }
+.portfolio-agency:first-child::after{
+  content:"";
+  display: block;
+ width: 53px;
+height: 4px;
+background: var(--main-color);
+border-radius: 2px;
+position:absolute;
+top: 76px;
 
 
+}
+.portfolio:first-child::after{
+ content:"";
+  display: block;
+ width: 58px;
+height: 4px;
+background: var(--main-color);
+border-radius: 2px;
+position:absolute;
+top: 76px;
+}
 
 .phone{
 
@@ -126,6 +146,8 @@ margin-right: 30px;
 .navigation-list-item:hover,
 .navigation-list-item:focus {
   color: var(--main-color);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .mail,
@@ -141,10 +163,15 @@ margin-right: 30px;
 .mail:hover,
 .mail:focus {
   color: var(--main-color);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 .phone:hover,
 .phone:focus {
   color: var(--main-color);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .social-icon-header-mail{
 cursor: pointer;
@@ -563,6 +590,7 @@ margin-bottom:30px;
 .team-member-social-list-link:hover,
 .team-member-social-list-link:focus{
 background-color: var(--main-color)
+
 }
 
 /* .team-member-social-list-item,
@@ -632,6 +660,9 @@ margin-rigt:30px;
 .our-clients-icon:hover,
 .our-clients-icon:focus{
   fill: var(--main-color);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
 }
 
 .our-clients-link:hover,
@@ -667,18 +698,7 @@ margin-top:94px;
 }
 
 
-.container-footer{
-  width: 1200px;
-  height: 252px;
-  align-items: center;
-  margin: 0 auto;
-  position: absolute;
-  left: 0px;
 
-.footer-address-portfolio {
-  margin-top:60px;
-}
-}
 
 .web,
 .studio {
@@ -882,6 +902,7 @@ top: 2787px;
 .join-to-us-list-link:hover,
 .join-to-us-list-link:focus{
 background-color: var(--main-color)
+
 }
 
 .join-to-us-list-link-portfolio:hover,
@@ -945,7 +966,7 @@ min-height: 581px;
   margin: 0 auto;
   align-items: center;
 }
-.filers-examples{}
+
 .filter-list-items{
   display: flex;
   list-style:none;
@@ -990,6 +1011,10 @@ margin-top:94px;
 .button-portfolio:focus {
   color: #FFFFFF;
   background-color: var(--main-color);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+  
 }
 
 .filers-examples{
