@@ -78,8 +78,10 @@ margin-right: 46px ;
 .social-icon-header{
   display: flex;
   justify-content: flex-end;
+  align-items: center;
   margin-left: 258px;
   height: 16px;
+  top:32px;
 }
 .portfolio-agency:first-child::after{
   content:"";
@@ -150,8 +152,7 @@ margin-right: 30px;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.mail,
-.phone {
+.social-icon-header-link{
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -159,32 +160,44 @@ margin-right: 30px;
   letter-spacing: 0.02em;
   color: #757575;
   text-decoration: none;
+  align-items: baseline;
+  justify-content: center;
 }
-.mail:hover,
+/* .mail:hover,
 .mail:focus {
   color: var(--main-color);
   transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); */
 
 }
-.phone:hover,
+/* .phone:hover,
 .phone:focus {
   color: var(--main-color);
   transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); */
 }
 .social-icon-header-mail{
 cursor: pointer;
 }
+.social-icon-header:hover,
+.social-icon-header:focus{
+fill: var(--main-color);
+
+}
   .social-icon-header-mail:hover,
   .social-icon-header-mail:focus{
-   color: var(--main-color);
+   fill: var(--main-color);
+   color:var(--main-color);
   }
-
+.social-icon-header-smartphone:hover,
+.social-icon-header-smartphone:focus{
+  fill: var(--main-color); 
+}
   .social-icon-header-link:hover,
   .social-icon-header-link:focus{
    color: var(--main-color);
-  }
+   fill:var(--main-color);
+     } 
 
 
   .social-icon-header-mail{
@@ -579,19 +592,24 @@ margin-bottom:30px;
   margin: 0 auto;
   margin-top: 16px;
   margin-bottom: 18px;
-
-
-
+}
+.team-member-social-list-link:hover,
+.team-member-social-list-link:focus{
+background-color: var(--main-color);
+fill:#FFFFFF;
 }
 .social-icon:hover,
 .social-icon:focus{
   fill: #FFFFFF;
-}
-.team-member-social-list-link:hover,
-.team-member-social-list-link:focus{
-background-color: var(--main-color)
+} 
 
-}
+/* .team-member-social-list-item:hover,
+.team-member-social-list-item:focus{
+
+fill:#FFFFFF;  
+} */
+
+
 
 /* .team-member-social-list-item,
 {
@@ -605,9 +623,41 @@ background-color: var(--main-color)
 
 /*<!-- our-clients --> */
 
+  /* Nasz zespół */
+.tittle{
+font-family:var(--main-font);
+font-style: normal;
+font-weight: bold;
+font-size: 36px;
+line-height: 1.666px;
+text-align: center;
+letter-spacing: 0.03em;
+
+color: #212121;
+
+
+}
+
 .our-clients-tittle{
 display: block;
-margin: 0 auto;}
+margin: 0 auto;
+font-family:var(--main-font);
+font-style: normal;
+font-weight: bold;
+font-size: 36px;
+line-height: 1.666px;
+text-align: center;
+letter-spacing: 0.03em;
+
+color: #212121;
+}
+
+.our-clients-icon-lisc{
+  height: 41.18px;
+width: 43.46px;
+fill:#AFB1B8;
+}
+
 
 
 .our-clients-icon{
@@ -631,8 +681,6 @@ align-items: center;
 font-family: var(--main-font);
 font-style: normal;
 font-weight: bold;
-font-size: 36px;
-line-height: 1.1667;
 text-align: center;
 letter-spacing: 0.03em;
 
@@ -656,7 +704,8 @@ letter-spacing: 0.03em;
 .our-clients-link:not(:last-child){
 margin-rigt:30px;
 }
-
+.our-clients-icon-lisc:hover,
+.our-clients-icon-lisc:focus,
 .our-clients-icon:hover,
 .our-clients-icon:focus{
   fill: var(--main-color);
@@ -786,6 +835,8 @@ margin-left:0px;
 }
 
 
+
+
 .social-icon-footer{
   width: 20px;
   height: 20px;
@@ -803,6 +854,7 @@ margin-left:0px;
   width: 10px;
   height: 16px;
   fill:#757575;
+ 
 }
 
 .join-to-us-tittle,
