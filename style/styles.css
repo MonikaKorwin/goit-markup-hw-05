@@ -724,9 +724,10 @@ background-position: center;
   transition: transform 250ms ease }  
 
 .filter-examples-images:hover .img-wrapper {
-  transform: translatey(0);}
+  transform: translatey(0);} 
 
-  .img-wrapper > p {
+.img-wrapper > p {
+
 width: 301px;
 height: 196px;
 padding-top: 49px;
@@ -739,6 +740,9 @@ font-size: 1.555;
 line-height: 28px;
 letter-spacing: 0.03em;
 color: #FFFFFF;}
+
+
+
 
 /* position: relative;
     /* visibility: hidden; */
