@@ -180,6 +180,7 @@ fill: var(--main-color);
 .social-icon-header-smartphone:focus{
   fill: var(--main-color); 
 }
+
   .social-icon-header-link:hover,
   .social-icon-header-link:focus{
    color: var(--main-color);
@@ -592,19 +593,7 @@ fill:#FFFFFF;
   fill: #FFFFFF;
 } 
 
-/* .team-member-social-list-item:hover,
-.team-member-social-list-item:focus{
 
-fill:#FFFFFF;  
-} */
-
-
-
-/* .team-member-social-list-item,
-{
-  text-decoration: none;
-  font-style: none; */
-}
 
 /* <!-- end-the-our-team --> */
 
@@ -722,9 +711,11 @@ background-position: center;
   background-color: var(--main-color);
   transform: translatey(100%);
   transition: transform 250ms ease }  
+  
 
 .filter-examples-images:hover .img-wrapper {
   transform: translatey(0);} 
+
 
 .img-wrapper > p {
 
@@ -937,6 +928,9 @@ height: 16px;
 
 margin-left: 316px;
 }
+
+
+
 .join-to-us-list-portfolio-ul,
 .join-to-us-list-portfolio-ul-portfolio{
   display: flex;
@@ -948,6 +942,10 @@ margin-left: 316px;
   margin-left: 316px;
 
 
+}
+.join-to-us{
+  position: absolute;
+  top:2644px;
 }
 .join-to-us-list{
     list-style: none;
@@ -1024,7 +1022,75 @@ margin:0 auto;
 .join-to-us-portfolio-2{
   top:1700px;
   position: absolute; 
+  
 }
+.newsletter-h2{
+  font-family: Roboto;
+font-style: normal;
+font-weight: bold;
+font-size: 14px;
+line-height: 1.172;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+
+color: #FFFFFF;
+margin-bottom: 20px;;
+}
+
+.newsletter-ul{
+  list-style: none;
+  display: flex;
+
+}
+
+.newsletter-ul-item-email{
+ 
+width: 358px;
+height: 50px;
+border: 1px solid rgba(255, 255, 255, 0.3);
+box-sizing: border-box;
+filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+border-radius: 4px;
+background-color: transparent;
+padding-left: 16px;
+margin-right: 12px;
+}
+
+.button-newletter-register{
+
+width: 200px;
+height: 50px;
+background: #2196F3;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+border-radius: 4px;
+border: none;
+font-family: var(--main-font);
+font-style: normal;
+font-weight: bold;
+font-size: 16px;
+line-height: 1.875;
+align-items: center;
+text-align: center;
+letter-spacing: 0.06em;
+
+color: #FFFFFF;
+}
+.button-newletter-register::after{
+  background-image: url("./images/icons.swg.svg#icon-IG");
+  fill:#EEEEEE;
+  background-size: 24px, 24px;
+}
+.newsletter-main{
+  margin-left: 600px;
+  bottom: 110px;
+  position: relative;
+  
+}
+.newsletter-portfolio{
+  margin-left: 600px;
+ ;
+}
+
 /* =============FOOTER PORTFOLIO.HTML============ */
 
 
@@ -1050,6 +1116,208 @@ min-height: 581px;
   z-index: 50;
  
 }
+.form-all{
+ 
+width: 448px;
+
+/* top: 261px;   */
+ /* z-index: 70; */
+ /* position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-100%,-200%);  */
+   
+}
+.form-all-flex{
+  display: flex;
+  flex-direction: column;
+   position: absolute;
+    /* top: 261px;  */
+    left: 50%;
+    top: 50%;  
+    transform: translate(-50%,-50%);
+    z-index: 70;
+    
+}
+
+
+.modal-tittle{
+font-family: var(--main-font);
+font-style: normal;
+font-weight: bold;
+font-size: 20px;
+line-height: 1.15;
+text-align: center;
+letter-spacing: 0.03em;
+color: #212121; 
+}
+.form-names{
+  font-family: var(--main-font);
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 1.666;
+letter-spacing: 0.01em;
+color: #757575;
+padding-bottom: 4px;
+padding-top:10px;
+
+}
+.form-names-all{
+height: 40px;
+width: 448px;
+border: 1px solid rgba(33, 33, 33, 0.2);
+box-sizing: border-box;
+border-radius: 4px;}
+
+
+.form-names-feedback{
+font-family: var(--main-font);
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 1.666;
+letter-spacing: 0.01em;
+color: rgba(117, 117, 117, 0.5);
+border: 1px solid rgba(33, 33, 33, 0.2);
+/* box-sizing: border-box; */
+border-radius: 4px;
+width: 448px;
+height: 120px;
+padding-left: 16px; 
+padding-top:12px;
+
+
+
+}
+.form-name-svg{
+  display: flex;
+}
+
+
+.form-names-feedback:focus,
+.form-names-feedback:hover{
+  border-color: var(--main-color);
+  
+}
+
+/* .form-names-name{
+  background-image: url('./images/icons.swg.svg#icon-IG');
+  background-size: 12px, 12px;
+  fill:#2196f3;
+  z-index: 70; */
+  
+.form-name{
+   position: absolute;
+    display: block;
+    height: 40px;
+}
+/* .form-names-name-svg{
+  margin-left: 15px;
+  /* position: relative; 
+  bottom:23px; 
+}  */
+}
+.form-names-all:hover,
+.form-names-all:focus{
+  border-color: var(--main-color);
+}
+.user-policy-text{
+  width: 420px;
+font-family: var(--main-font);
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 1.714;
+/* identical to box height, or 171% */
+
+letter-spacing: 0.03em;
+
+color: #757575;
+margin-top: 20px;
+margin-left: 14px;
+align-items: center;
+
+}
+
+.user-policy-text::before{
+display: inline-block;
+
+content:"";
+width: 16px;
+height: 16px;
+outline: 1px solid #000000;
+border-radius: 2px;
+margin-right: 7px;
+position: relative;
+top:4.5px;
+
+
+}
+.modal-form-policy:checked + .user-policy-text::before{
+  background-color: var(--main-color);
+  border: 3px solid transparent;
+  outline:none;
+  background-image: url(../images/done_bird.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); 
+}
+
+.policy-text-link{
+  color: var(--main-color);
+}
+.visually-hidden{
+  position:absolute !important;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+}
+
+
+.button-form-send{
+margin-top: 30px;
+margin-left: 124px;
+width: 200px;
+height: 50px;
+background: var(--main-color);
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+border-radius: 4px;
+border:none;
+
+
+font-family: var(--main-font);
+font-style: normal;
+font-weight: bold;
+font-size: 16px;
+line-height: 1.875;
+/* identical to box height, or 187% */
+letter-spacing: 0.06em;
+
+color: #FFFFFF;
+
+}
+
+
+
+
+
+
+.button-form{
+width: 200px;
+height: 50px;
+background: var(--main-color);
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+border-radius: 4px;
+border-bottom: none;
+}
+
+
+
 
 .close-btn{
   position: absolute;
